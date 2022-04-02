@@ -3,11 +3,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Teaching"
-    url: /teaching/
-
   - title: "Software"
     url: /software/
-    
-  - title: "Guide"
-    url: /markdown/
+
+  - title: "Teaching"
+    url: /teaching/
