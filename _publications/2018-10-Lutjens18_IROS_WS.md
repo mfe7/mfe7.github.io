@@ -17,7 +17,10 @@ type: "workshop"
 school: "N/A"
 awards: "Oral Presentation"
 notes: ""
+include_on_website: false
 image: ""
+links_to_code: "N/A"
+links_to_video: "N/A"
 collection: publications
 permalink: /publication/2018-10-Lutjens18_IROS_WS.html
 ---

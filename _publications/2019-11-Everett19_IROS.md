@@ -17,7 +17,10 @@ type: "conference"
 school: "N/A"
 awards: "Winner: Best Paper Award on Cognitive Robotics"
 notes: ""
+include_on_website: true
 image: "dc2g_architecture.png"
+links_to_code: "https://github.com/mit-acl/dc2g"
+links_to_video: "https://www.youtube.com/watch?v=yVlnbqEFct0"
 collection: publications
 permalink: /publication/2019-11-Everett19_IROS.html
 ---

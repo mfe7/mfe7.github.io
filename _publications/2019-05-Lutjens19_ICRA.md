@@ -17,7 +17,10 @@ type: "conference"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "safe_rl.png"
+links_to_code: "N/A"
+links_to_video: "N/A"
 collection: publications
 permalink: /publication/2019-05-Lutjens19_ICRA.html
 ---

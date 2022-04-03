@@ -11,13 +11,16 @@ volume: "5"
 number: "6"
 pages: "2114--2119"
 publisher: ""
-month: "01"
-address: ""
+month: "12"
+address: "N/A"
 type: "journal"
 school: "N/A"
 awards: "N/A"
 notes: "Also presented in \textit{American Controls Conference (ACC) Invited Session on Learning, Optimization, and Control for Safety-critical Systems}, May, 2021."
+include_on_website: true
 image: "partitions.gif"
+links_to_code: "https://github.com/mit-acl/nn_robustness_analysis"
+links_to_video: "https://www.youtube.com/watch?v=FJTpeDIqy88"
 collection: publications
-permalink: /publication/2021-01-Everett21_LCSS.html
+permalink: /publication/2021-12-Everett21_LCSS.html
 ---

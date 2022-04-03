@@ -11,13 +11,16 @@ volume: ""
 number: ""
 pages: ""
 publisher: ""
-month: "01"
+month: "12"
 address: "N/A"
 type: "journal"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "carrl_eqn.png"
+links_to_code: "N/A"
+links_to_video: "N/A"
 collection: publications
-permalink: /publication/2021-01-Everett21_TNNLS.html
+permalink: /publication/2021-12-Everett21_TNNLS.html
 ---

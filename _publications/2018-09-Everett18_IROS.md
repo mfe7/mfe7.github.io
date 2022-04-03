@@ -17,7 +17,10 @@ type: "conference"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "ga3c_cadrl.gif"
+links_to_code: "N/A"
+links_to_video: "https://youtu.be/echxMZZG1nU"
 collection: publications
 permalink: /publication/2018-09-Everett18_IROS.html
 ---

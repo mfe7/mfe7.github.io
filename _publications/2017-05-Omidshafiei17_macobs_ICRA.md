@@ -17,7 +17,10 @@ type: "conference"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "semantic_level_decentralized.gif"
+links_to_code: "N/A"
+links_to_video: "https://www.youtube.com/watch?v=XXYSAmdHn38&feature=youtu.be"
 collection: publications
 permalink: /publication/2017-05-Omidshafiei17_macobs_ICRA.html
 ---

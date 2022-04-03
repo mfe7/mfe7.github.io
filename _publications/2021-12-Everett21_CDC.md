@@ -7,17 +7,20 @@ status: "published"
 arxiv: "https://arxiv.org/abs/2110.01388"
 official_link: ""
 doi: ""
-volume: ""
-number: ""
+volume: "N/A"
+number: "N/A"
 pages: ""
 publisher: ""
-month: "01"
-address: ""
+month: "12"
+address: "Austin, TX, USA"
 type: "conference"
-school: ""
-awards: ""
+school: "N/A"
+awards: "N/A"
 notes: ""
+include_on_website: true
 image: "nfls.png"
+links_to_code: "https://github.com/mit-acl/nn_robustness_analysis"
+links_to_video: "https://youtu.be/juiyRPUwetM"
 collection: publications
-permalink: /publication/2021-01-Everett21_CDC.html
+permalink: /publication/2021-12-Everett21_CDC.html
 ---

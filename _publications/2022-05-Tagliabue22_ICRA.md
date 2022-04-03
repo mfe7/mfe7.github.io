@@ -7,17 +7,20 @@ status: "to appear"
 arxiv: "https://arxiv.org/abs/2109.09910"
 official_link: ""
 doi: ""
-volume: ""
-number: ""
+volume: "N/A"
+number: "N/A"
 pages: ""
 publisher: ""
-month: "01"
-address: ""
+month: "05"
+address: "Philadelphia, PA, USA"
 type: "conference"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "icra22_andrea.gif"
+links_to_code: ""
+links_to_video: ""
 collection: publications
-permalink: /publication/2022-01-Tagliabue22_ICRA.html
+permalink: /publication/2022-05-Tagliabue22_ICRA.html
 ---

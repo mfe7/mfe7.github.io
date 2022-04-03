@@ -1,0 +1,43 @@
+{% include base_path %}
+
+{% if include.id %}
+  {% assign homepage_feature_row = page.[include.id] %}
+{% else %}
+  {% assign homepage_feature_row = page.homepage_feature_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+
+  {% for f in homepage_feature_row %}
+
+    {% if f.url contains "://" %}
+      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ f.url | prepend: base_path }}{% endcapture %}
+    {% endif %}
+
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+        {% if f.image_path %}
+          <div class="archive__item-teaser">
+            <img src=
+              {% if f.image_path contains "://" %}
+                "{{ f.image_path }}"
+              {% else %}
+                "{{ f.image_path | prepend: "/images/" | prepend: base_path }}"
+              {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body" style="text-align: center; text-decoration: none;">
+          {% if f.title %}
+            <h4 class="archive__item-title">{{ f.title }}</h4>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

@@ -1,0 +1,86 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+ <table>
+ <tr>
+ <td style="width: 250px"><img src="/images/publications/{{ post.image }}" width=200px style="border: 2px solid black; float:left; margin-right:15px; border-radius: 20px;"/></td>
+ <td>
+ <div>
+    <h2 style="margin-top: 10px; margin-bottom: 0px;">{{ title }}</h2>
+
+    {% assign authors = post.authors | replace_first: 'Michael Everett', '<b>Michael Everett</b>' %}
+    {% assign authors = authors | replace: '"{o}', 'ö' %}
+    {% assign authors = authors | replace: '"{u}', 'ü' %}
+    <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">{{ authors }}</h3>
+    {% if post.type contains "thesis" %}
+      <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">{% if post.type contains "phd" %}PhD{% else %}SM{% endif %} Thesis, {{ post.year }}</h3>
+      <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">MIT Department of Mechanical Engineering</h3>
+    {% else %}
+      <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
+      {{ post.venue }}, {{ post.year }}
+      {% if post.status == "in review" %}
+        (in review)
+      {% elsif post.status == "accepted" %}
+        (accepted)
+      {% elsif post.status == "to appear" %}
+        (to appear)
+      {% endif %}
+      </h3>
+    {% endif %}
+
+    {% if post.awards != "N/A" %}
+      {% assign awards = post.awards | split: ", " %}
+      {% for award in awards %}
+        <h3 style="color: green; margin-top: 10px; margin-bottom: 0px;">
+          {{ award }}
+        </h3>
+      {% endfor %}
+    {% endif %}
+
+    <h3 style="margin-top: 10px; margin-bottom: 0px;">
+        
+        <!-- Arxiv Paper -->
+        {% if post.arxiv != "" and post.arxiv != "N/A" %}
+          <a style="text-decoration: none;" href="{{ post.arxiv }}" target="_blank">Paper <i class="fa fa-file"></i></a>&nbsp;&nbsp;&nbsp;
+        {% endif %}
+        
+        <!-- Code -->
+        {% if post.links_to_code contains "," %}
+          {% assign codes = post.links_to_code | split: ", " %}
+          Code: [
+          {% for code in codes %}
+            {% assign code_info = code | split: ": " %}
+            <a style="text-decoration: none;" href="{{ code_info.last }}" target="_blank">{{ code_info.first }} <i class="fa fa-code"></i></a>
+            {% if code != codes.last %}
+              ,&nbsp;
+            {% endif %}
+          {% endfor %}
+          ]&nbsp;&nbsp;&nbsp;
+        {% elsif post.links_to_code != "" and post.links_to_code != "N/A" %}
+          <a style="text-decoration: none;" href="{{ post.links_to_code }}" target="_blank">Code <i class="fa fa-code"></i></a>&nbsp;&nbsp;&nbsp;
+        {% endif %}
+
+        <!-- Video -->
+        {% if post.links_to_video != "" and post.links_to_video != "N/A" %}
+          <a style="text-decoration: none;" href="{{ post.links_to_video }}" target="_blank">Video <i class="fa fa-film"></i></a>&nbsp;&nbsp;&nbsp;
+        {% endif %}
+    </h3>
+<!--      <h5>
+         <a href="https://ieeexplore.ieee.org/document/9638658" target="_blank">IEEE Xplore <i class="fa fa-file"></i></a>
+         &nbsp;&nbsp;&nbsp;
+     </h5> -->
+ </div>
+ </td>
+ </tr>
+ </table>

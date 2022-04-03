@@ -24,6 +24,8 @@
 # In[2]:
 
 import pandas as pd
+import os
+import datetime
 
 
 # ## Import TSV
@@ -49,6 +51,7 @@ html_escape_table = {
     "'": "&apos;"
     }
 
+
 def html_escape(text):
     """Produce entities within text."""
     return "".join(html_escape_table.get(c,c) for c in text)
@@ -60,15 +63,13 @@ def html_escape(text):
 
 # In[5]:
 
-import os
-import datetime
 for row, item in publications.iterrows():
     
     year = item.Year
 
     month = item.Month
     if month == '':
-        month = "01"
+        month = "12"
     else:
         month = str(datetime.datetime.strptime(item.Month, '%B').month).zfill(2)
     paper_id = item.Abbreviation
@@ -76,9 +77,9 @@ for row, item in publications.iterrows():
     md_filename = "{}.md".format(filename)
     html_filename = "{}.html".format(filename)
     
-    ## YAML variables
+    # YAML variables
 
-    md = "---\ntitle: \""   + item.Title + '"'
+    md = "---\ntitle: \"" + item.Title + '"'
 
     # Authors
     if ',' in item.Authors:
@@ -93,7 +94,7 @@ for row, item in publications.iterrows():
 
     authors_str = authors_str.replace(' and ', ', ')
 
-    md += "\nauthors: \""   + authors_str + '"'
+    md += "\nauthors: \"" + authors_str + '"'
     
     # Venue
     venue_dict = {
@@ -117,56 +118,37 @@ for row, item in publications.iterrows():
     else:
         venue_str = item.Venue
 
-    md += "\nvenue: \""   + venue_str + '"'
-    md += "\nyear: \""   + str(year) + '"'
-    md += "\nstatus: \""   + item.Status + '"'
-    md += "\narxiv: \""   + item['Arxiv link'] + '"'
-    md += "\nofficial_link: \""   + item['Official Link'] + '"'
-    md += "\ndoi: \""   + item['DOI'] + '"'
-    md += "\nvolume: \""   + item['Volume'] + '"'
-    md += "\nnumber: \""   + item['Number'] + '"'
-    md += "\npages: \""   + item['Pages'] + '"'
-    md += "\npublisher: \""   + item['Publisher'] + '"'
-    md += "\nmonth: \""   + month + '"'
-    md += "\naddress: \""   + item['Address'] + '"'
-    md += "\ntype: \""   + item['Type'] + '"'
-    md += "\nschool: \""   + item['School'] + '"'
-    md += "\nawards: \""   + item['Awards'] + '"'
-    md += "\nnotes: \""   + item['Notes'] + '"'
+    md += "\nvenue: \"" + venue_str + '"'
+    md += "\nyear: \"" + str(year) + '"'
+    md += "\nstatus: \"" + item.Status + '"'
+    md += "\narxiv: \"" + item['Arxiv link'] + '"'
+    md += "\nofficial_link: \"" + item['Official Link'] + '"'
+    md += "\ndoi: \"" + item['DOI'] + '"'
+    md += "\nvolume: \"" + item['Volume'] + '"'
+    md += "\nnumber: \"" + item['Number'] + '"'
+    md += "\npages: \"" + item['Pages'] + '"'
+    md += "\npublisher: \"" + item['Publisher'] + '"'
+    md += "\nmonth: \"" + month + '"'
+    md += "\naddress: \"" + item['Address'] + '"'
+    md += "\ntype: \"" + item['Type'] + '"'
+    md += "\nschool: \"" + item['School'] + '"'
+    md += "\nawards: \"" + item['Awards'] + '"'
+    md += "\nnotes: \"" + item['Notes'] + '"'
     
-    md += "\nimage: \""   + item['Image Filename'] + '"'
+    include_on_website = "true" if item['Include on Website'] == "Y" else "false"
+    md += "\ninclude_on_website: " + include_on_website
+    
+    md += "\nimage: \"" + item['Image Filename'] + '"'
+    md += "\nlinks_to_code: \"" + item['Links to Code'] + '"'
+    md += "\nlinks_to_video: \"" + item['Links to Video'] + '"'
 
     md += """\ncollection: publications"""
     
     md += """\npermalink: /publication/""" + html_filename
     
-    # if len(str(item.excerpt)) > 5:
-    #     md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
-    
-    # md += "\ndate: " + str(item.pub_date) 
-    
-    # md += "\nvenue: '" + html_escape(item.venue) + "'"
-    
-    # if len(str(item.paper_url)) > 5:
-    #     md += "\npaperurl: '" + item.paper_url + "'"
-    
-    # md += "\ncitation: '" + html_escape(item.citation) + "'"
-    
     md += "\n---"
-    
-    ## Markdown description for individual page
-    
-    # if len(str(item.paper_url)) > 5:
-    #     md += "\n\n<a href='" + item.paper_url + "'>Download paper here</a>\n" 
-        
-    # if len(str(item.excerpt)) > 5:
-    #     md += "\n" + html_escape(item.excerpt) + "\n"
-        
-    # md += "\nRecommended citation: " + item.citation
     
     md_filename = os.path.basename(md_filename)
        
     with open("../_publications/" + md_filename, 'w') as f:
         f.write(md)
-
-

@@ -17,7 +17,10 @@ type: "workshop"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "rmaddpg.png"
+links_to_code: "https://github.com/rosewang2008/rmaddpg"
+links_to_video: "N/A"
 collection: publications
 permalink: /publication/2019-06-Wang19_ICML_WS.html
 ---

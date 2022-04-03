@@ -11,13 +11,16 @@ volume: ""
 number: ""
 pages: ""
 publisher: ""
-month: "01"
-address: ""
+month: "12"
+address: "N/A"
 type: "journal"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "ClosedLoopGreedySimGuidedPartitioner.gif"
+links_to_code: "https://github.com/mit-acl/nn_robustness_analysis"
+links_to_video: "N/A"
 collection: publications
-permalink: /publication/2021-01-Everett21_IEEEAccess2.html
+permalink: /publication/2021-12-Everett21_IEEEAccess2.html
 ---

@@ -17,7 +17,10 @@ type: "conference"
 school: "N/A"
 awards: "Finalist: Best Multi-Robot Systems Paper"
 notes: ""
+include_on_website: true
 image: "cadrl_original.gif"
+links_to_code: "N/A"
+links_to_video: "https://youtu.be/BryJ9jeBkbU"
 collection: publications
 permalink: /publication/2017-05-Chen17_decentralized_ICRA.html
 ---

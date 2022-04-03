@@ -17,7 +17,10 @@ type: "conference"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "carrl_intuition.png"
+links_to_code: "N/A"
+links_to_video: "https://www.youtube.com/watch?v=Gp6QG66ATy4"
 collection: publications
 permalink: /publication/2019-10-Lutjens19_CORL.html
 ---

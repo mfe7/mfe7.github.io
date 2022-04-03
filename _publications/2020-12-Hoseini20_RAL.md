@@ -11,13 +11,16 @@ volume: "5"
 number: "2"
 pages: "3221--3226"
 publisher: "IEEE"
-month: "01"
+month: "12"
 address: "N/A"
 type: "journal"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "samaneh.gif"
+links_to_code: "N/A"
+links_to_video: "N/A"
 collection: publications
-permalink: /publication/2020-01-Hoseini20_RAL.html
+permalink: /publication/2020-12-Hoseini20_RAL.html
 ---

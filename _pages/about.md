@@ -6,12 +6,26 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+homepage_feature_row:
+  - image_path: publications/nfls.png
+    title: "Neural Feedback Loop Verification"
+  - image_path: publications/cadrl_stata.gif
+    title: "Socially Aware Motion Planning"
+  - image_path: publications/jackal_offroad_small.png
+    title: "High-Speed Off-Road Navigation"
 ---
 
 I am a Research Scientist at the MIT Department of Aeronautics and Astronautics, collaborating with [Prof. Jonathan How](http://www.mit.edu/~jhow/) and [Prof. Nicholas Roy](http://groups.csail.mit.edu/rrg/).
 My research lies at the intersection of robotics, deep learning, and control theory.
 I received the PhD (2020), SM (2017), and SB (2015) degrees from MIT in Mechanical Engineering.
 My PhD work was advised by [Prof. Jonathan How](http://www.mit.edu/~jhow/), [Prof. John Leonard](https://www.csail.mit.edu/person/john-leonard), and [Prof. Alberto Rodriguez](https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU).
+
+My goal is to develop **certifiable learning machines**.
+This means creating robots that discover how to do cool behaviors -- with guarantees on safety, reliability, and efficiency.
+Some specific techniques of interest are: reinforcement learning, reachability analysis, learning cost-to-go functions, and bridging semantic perception and motion planning.
+Many of the applications are on navigation in challenging environments, such as off-road (e.g., forests, deserts) and alongside humans (e.g., on busy sidewalks, in crowded buildings).
+
+{% include homepage_feature_row %}
 
 Selected Awards
 ------

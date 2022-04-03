@@ -2,17 +2,33 @@ A Github Pages template for academic websites. This was forked (then detached) b
 
 TODOs:
 
-- [ ] organize software page
-- [ ] add awards to publications page
-- [ ] get youtube link working on sidebar
-- [ ] replace headshot
-- [ ] add code to publications
-- [ ] better font size/spacing on publications
-- [ ] add default publication img
+Software page:
+- [x] organize software page
+- [x] make software page auto-generated
+- [ ] perfect grid
+
+Publications page:
+- [x] add awards to publications page
+- [x] add code to publications
+- [x] add videos to publications
+- [x] better font size/spacing on publications
+- [x] separate publications by pre-print, thesis, peer-reviewed publications
+- [x] fix bjorns name
+- [x] dont include some papers on website
 - [ ] add bibtex/citations for publications
-- [ ] make software page auto-generated
+- [ ] add default publication img
+
+Sidebar:
+- [x] get youtube link working on sidebar
+- [ ] replace headshot
+
+Main page:
+- [x] Add research interests to first page / its own page
+- [ ] perfect grid of imgs
+- [ ] perfect grid of youtube clips
+
+Other:
 - [ ] figure out how to deploy page via github
-- [ ] Add research interests to first page / its own page
 
 I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
 

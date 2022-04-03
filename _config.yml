@@ -72,7 +72,7 @@ analytics:
 # Site Author
 author:
   name             : "Michael Everett"
-  avatar           : "headshot.png"
+  avatar           : "headshot_square.png"
   bio              : "Research Scientist"
   location         : "31-235C"
   employer         : "MIT"

@@ -17,7 +17,10 @@ type: "conference"
 school: "N/A"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "scalable_accelerated.png"
+links_to_code: "N/A"
+links_to_video: "N/A"
 collection: publications
 permalink: /publication/2017-05-Omidshafiei17_continuous_ICRA.html
 ---

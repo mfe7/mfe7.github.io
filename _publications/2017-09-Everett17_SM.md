@@ -17,7 +17,10 @@ type: "mastersthesis"
 school: "mitme"
 awards: "N/A"
 notes: ""
+include_on_website: true
 image: "jackal_perception_zoom.png"
+links_to_code: "N/A"
+links_to_video: "N/A"
 collection: publications
 permalink: /publication/2017-09-Everett17_SM.html
 ---

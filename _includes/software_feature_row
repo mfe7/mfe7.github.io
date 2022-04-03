@@ -1,0 +1,49 @@
+{% include base_path %}
+
+{% if include.id %}
+  {% assign software_feature_row = page.[include.id] %}
+{% else %}
+  {% assign software_feature_row = page.software_feature_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+
+  {% for f in software_feature_row %}
+
+    {% if f.url contains "://" %}
+      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ f.url | prepend: base_path }}{% endcapture %}
+    {% endif %}
+
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+        {% if f.image_path %}
+          <div class="archive__item-teaser">
+            <a href="{{ f_url }}" target="_blank">
+                <img src=
+                  {% if f.image_path contains "://" %}
+                    "{{ f.image_path }}"
+                  {% else %}
+                    "{{ f.image_path | prepend: "/images/" | prepend: base_path }}"
+                  {% endif %}
+                alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            </a>
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body" style="text-align: center; text-decoration: none;">
+          {% if f.title %}
+            <h4 class="archive__item-title">{{ f.title }}</h4>
+          {% endif %}
+
+          <div class="archive__item-excerpt">
+            <a class="github-button" href="{{ f.url }}" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>&nbsp;<a class="github-button" href="{{ f.url }}/fork" data-size="large" data-show-count="true" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>
