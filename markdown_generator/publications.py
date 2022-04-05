@@ -36,7 +36,29 @@ import datetime
 
 # In[3]:
 
-publications = pd.read_csv("mfe_bib.tsv", sep="\t", header=0, keep_default_na=False)
+# import requests
+# response = requests.get('https://docs.google.com/spreadsheets/d/1yQSM7kXSDZcthXFZ0esCsdv-X3CnzVfzGJDpmfoYkWc/export#gid=0&output=tsv')
+# assert response.status_code == 200, 'Wrong status code'
+# print(response.content)
+
+# assert(0)
+
+def build_sheet_url(doc_id, sheet_id):
+    return f'https://docs.google.com/spreadsheets/d/{doc_id}/export?format=tsv&gid={sheet_id}'
+
+
+def write_df_to_local(df, file_path):
+    df.to_csv(file_path, sep='\t', index=False)
+
+
+doc_id = '1yQSM7kXSDZcthXFZ0esCsdv-X3CnzVfzGJDpmfoYkWc'
+sheet_id = '0'
+sheet_url = build_sheet_url(doc_id, sheet_id)
+publications = pd.read_csv(sheet_url, sep="\t", header=0, keep_default_na=False)
+file_path = 'mfe_bib.tsv'
+write_df_to_local(publications, file_path)
+
+# publications = pd.read_csv("mfe_bib.tsv", sep="\t", header=0, keep_default_na=False)
 
 
 # ## Escape special characters

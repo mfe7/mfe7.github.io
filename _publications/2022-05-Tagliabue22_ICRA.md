@@ -20,7 +20,7 @@ notes: ""
 include_on_website: true
 image: "icra22_andrea.gif"
 links_to_code: ""
-links_to_video: ""
+links_to_video: "https://youtu.be/28zQFktJIqg"
 collection: publications
 permalink: /publication/2022-05-Tagliabue22_ICRA.html
 ---
