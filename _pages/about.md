@@ -15,15 +15,24 @@ homepage_feature_row:
     title: "High-Speed Off-Road Navigation"
 ---
 
-I am a Research Scientist at the MIT Department of Aeronautics and Astronautics, collaborating with [Prof. Jonathan How](http://www.mit.edu/~jhow/) and [Prof. Nicholas Roy](http://groups.csail.mit.edu/rrg/).
-My research lies at the intersection of robotics, deep learning, and control theory.
-I received the PhD (2020), SM (2017), and SB (2015) degrees from MIT in Mechanical Engineering.
-My PhD work was advised by [Prof. Jonathan How](http://www.mit.edu/~jhow/), [Prof. John Leonard](https://www.csail.mit.edu/person/john-leonard), and [Prof. Alberto Rodriguez](https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU).
+I'm currently a **Visiting Faculty Researcher with Google's [People + AI Research (PAIR)](https://research.google/teams/brain/pair/)** team.
+Then, I'll be joining **Northeastern University in January 2023** as an Assistant Professor, with a joint appointment in the Department of Electrical & Computer Engineering and the Khoury College of Computer Sciences.
 
-My goal is to develop **certifiable learning machines**.
+---
+
+<span style="color:blue">**Prospective Ph.D. Students:**</span> I plan to admit multiple fully-funded Ph.D. students to my group at Northeastern University in the 2022-2023 cycle. Please reach out via email if you are interested in applying!
+
+---
+
+My research lies at the intersection of robotics, deep learning, and control theory, with the goal of developing **certifiable learning machines**.
 This means creating robots that discover how to do cool behaviors -- with guarantees on safety, reliability, and efficiency.
-Some specific techniques of interest are: reinforcement learning, reachability analysis, learning cost-to-go functions, and bridging semantic perception and motion planning.
-Many of the applications are on navigation in challenging environments, such as off-road (e.g., forests, deserts) and alongside humans (e.g., on busy sidewalks, in crowded buildings).
+Some specific techniques of interest are: reinforcement learning (RL), reachability analysis, learning cost-to-go functions,  bridging semantic perception and motion planning, and model predictive control (MPC).
+A key application area of interest is **navigation in challenging environments**, such as off-road (e.g., forests, deserts) and alongside humans (e.g., on busy sidewalks, in crowded buildings).
+
+Previously, I was a Research Scientist and Postdoctoral Associate at the MIT Department of Aeronautics and Astronautics, working on the [DARPA RACER](https://www.darpa.mil/news-events/2022-01-13) program, the [ARL SARA](https://www.arl.army.mil/business/collaborative-alliances/current-cras/sara-cra/sara-overview/) program, and advancing the field of certifiable learning.
+I received the PhD (2020), SM (2017), and SB (2015) degrees from MIT in Mechanical Engineering.
+
+---
 
 {% include homepage_feature_row %}
 

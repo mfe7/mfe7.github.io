@@ -73,9 +73,9 @@ analytics:
 author:
   name             : "Michael Everett"
   avatar           : "headshot_square.png"
-  bio              : "Research Scientist"
-  location         : "31-235C"
-  employer         : "MIT"
+  bio              : "Visting Faculty Researcher"
+  location         :
+  employer         : "Google"
   youtube          : "https://www.youtube.com/playlist?list=PLnGTmjLktOnxYmjegt7ZZmMpu8qevyqMS"
   googlescholar    : "https://scholar.google.com/citations?user=SxinYKMAAAAJ&hl=en"
   email            : "mfe@mit.edu"
