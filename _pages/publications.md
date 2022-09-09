@@ -10,8 +10,17 @@ author_profile: true
 
 {% include base_path %}
 
+{% assign show_preprints = false %}
+{% for post in site.publications reversed %}
+  {% if post.status == "in review" %}
+    {% assign show_preprints = true %}
+  {% endif %}
+{% endfor %}
+
+{% if show_preprints %}
 Pre-prints
 ======
+{% endif %}
 {% for post in site.publications reversed %}
   {% if post.status == "in review" %}
     {% if post.include_on_website %}

@@ -20,7 +20,7 @@ Then, I'll be joining **Northeastern University in January 2023** as an Assistan
 
 ---
 
-<span style="color:blue">**Prospective Ph.D. Students:**</span> I plan to admit multiple fully-funded Ph.D. students to my group at Northeastern University in the 2022-2023 cycle. Please reach out via email if you are interested in applying!
+<span style="color:blue">**Prospective Ph.D. Students:**</span> I plan to admit multiple fully funded Ph.D. students to my group at Northeastern University in the 2022-2023 cycle. Please reach out via email if you are interested in applying!
 
 ---
 
@@ -38,6 +38,7 @@ I received the PhD (2020), SM (2017), and SB (2015) degrees from MIT in Mechanic
 
 Selected Awards
 ------
+- Runner-Up: Best Paper Award ([1st Workshop on Formal Verification of Machine Learning, ICML 2022](https://www.ml-verification.com/home))
 - Editors' Top 5 Published Articles of 2021 (IEEE Access)
 - Winner: Best Paper Award on Cognitive Robotics (IROS 2019)
 - Winner: Best Student Paper (IROS 2017)

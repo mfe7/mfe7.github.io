@@ -16,7 +16,7 @@ address: "N/A"
 type: "journal"
 school: "N/A"
 awards: "N/A"
-notes: "Also presented in \textit{American Controls Conference (ACC) Invited Session on Learning, Optimization, and Control for Safety-critical Systems}, May, 2021."
+notes: "Also presented in American Controls Conference (ACC) Invited Session on Learning, Optimization, and Control for Safety-critical Systems, May, 2021."
 include_on_website: true
 image: "partitions.gif"
 links_to_code: "https://github.com/mit-acl/nn_robustness_analysis"

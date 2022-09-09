@@ -39,6 +39,12 @@
       </h3>
     {% endif %}
 
+    {% if post.notes != "" %}
+      <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
+        {{ post.notes }}
+      </h3>
+    {% endif %}
+
     {% if post.awards != "N/A" %}
       {% assign awards = post.awards | split: ", " %}
       {% for award in awards %}

@@ -3,7 +3,7 @@ title: "Demonstration-Efficient Guided Policy Search via Imitation of Robust Tub
 authors: "Andrea Tagliabue, Dong-Ki Kim, Michael Everett, Jonathan P. How"
 venue: "IEEE International Conference on Robotics and Automation (ICRA)"
 year: "2022"
-status: "to appear"
+status: "published"
 arxiv: "https://arxiv.org/abs/2109.09910"
 official_link: ""
 doi: ""

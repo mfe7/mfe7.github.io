@@ -16,7 +16,7 @@ address: "Xi'an, China"
 type: "conference"
 school: "N/A"
 awards: "N/A"
-notes: "Also presented in \textit{International Conference on Learning Representations (ICLR) Workshop on Robust and Reliable Machine Learning in the Real World}, May, 2021."
+notes: "Also presented in International Conference on Learning Representations (ICLR) Workshop on Robust and Reliable Machine Learning in the Real World, May, 2021."
 include_on_website: true
 image: "icra21_diagram.png"
 links_to_code: "https://github.com/mit-acl/nn_robustness_analysis"
