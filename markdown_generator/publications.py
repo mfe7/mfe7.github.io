@@ -13,7 +13,6 @@ def build_sheet_url(doc_id, sheet_id):
 def write_df_to_local(df, file_path):
     df.to_csv(file_path, sep='\t', index=False)
 
-
 doc_id = '1yQSM7kXSDZcthXFZ0esCsdv-X3CnzVfzGJDpmfoYkWc'
 sheet_id = '0'
 sheet_url = build_sheet_url(doc_id, sheet_id)
@@ -39,6 +38,12 @@ def html_escape(text):
     """Produce entities within text."""
     return "".join(html_escape_table.get(c,c) for c in text)
 
+
+# Delete all files from /_publications directory so we don't get duplicates on changes
+import glob
+files = glob.glob('../_publications/*.md')
+for f in files:
+    os.remove(f)
 
 bibtex_str = ''
 

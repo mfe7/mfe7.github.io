@@ -2,3 +2,4 @@ _site/
 Gemfile.lock
 .DS_Store
 mfe.bib
+markdown_generator/mfe_bib.tsv
