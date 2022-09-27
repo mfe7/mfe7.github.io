@@ -1,7 +1,7 @@
 ---
 title: "Neural Network Verification in Control (Tutorial)"
 authors: "Michael Everett"
-venue: "Conference on Decision and Control (CDC)"
+venue: "IEEE Conference on Decision and Control (CDC)"
 year: "2021"
 status: "published"
 arxiv: "https://arxiv.org/abs/2110.01388"
