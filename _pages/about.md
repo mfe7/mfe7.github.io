@@ -51,6 +51,10 @@ Recent Talks
 
 <div class="row">
     <div class="col-sm-6" align="center">
+        <h5 class="section-heading">Certifiable Learning Machines (Sep. 2022)</h5>
+        <iframe width="356" height="200" src="https://www.youtube.com/embed/CaBBSDjQ-zM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+    </div>
+    <div class="col-sm-6" align="center">
         <h5 class="section-heading">Tutorial on NN Verification in Control (Dec. 2021)</h5>
         <iframe width="356" height="200" src="https://www.youtube.com/embed/juiyRPUwetM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
     </div>
