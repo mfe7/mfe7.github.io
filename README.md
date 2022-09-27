@@ -22,4 +22,5 @@ Main page:
 ## To update publications
 
 1. Make sure the google sheet is up-to-date.
-1. Run `python markdown_generator/publications.py`. It will automatically download the sheet as a `.tsv` and generate/update the markdown files in `_publications/` for each publication.
+1. Run `cd markdown_generator`
+1. Run `python publications.py`. It will automatically download the sheet as a `.tsv` and generate/update the markdown files in `_publications/` for each publication.

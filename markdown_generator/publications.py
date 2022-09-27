@@ -1,47 +1,10 @@
 
 # coding: utf-8
 
-# # Publications markdown generator for academicpages
-# 
-# Takes a TSV of publications with metadata and converts them for use with [academicpages.github.io](academicpages.github.io). This is an interactive Jupyter notebook, with the core python code in publications.py. Run either from the `markdown_generator` folder after replacing `publications.tsv` with one that fits your format.
-# 
-# TODO: Make this work with BibTex and other databases of citations, rather than Stuart's non-standard TSV format and citation style.
-# 
-
-# ## Data format
-# 
-# The TSV needs to have the following columns: pub_date, title, venue, excerpt, citation, site_url, and paper_url, with a header at the top. 
-# 
-# - `excerpt` and `paper_url` can be blank, but the others must have values. 
-# - `pub_date` must be formatted as YYYY-MM-DD.
-# - `url_slug` will be the descriptive part of the .md file and the permalink URL for the page about the paper. The .md file will be `YYYY-MM-DD-[url_slug].md` and the permalink will be `https://[yourdomain]/publications/YYYY-MM-DD-[url_slug]`
-
-
-# ## Import pandas
-# 
-# We are using the very handy pandas library for dataframes.
-
-# In[2]:
-
 import pandas as pd
 import os
 import datetime
 
-
-# ## Import TSV
-# 
-# Pandas makes this easy with the read_csv function. We are using a TSV, so we specify the separator as a tab, or `\t`.
-# 
-# I found it important to put this data in a tab-separated values format, because there are a lot of commas in this kind of data and comma-separated values can get messed up. However, you can modify the import statement, as pandas also has read_excel(), read_json(), and others.
-
-# In[3]:
-
-# import requests
-# response = requests.get('https://docs.google.com/spreadsheets/d/1yQSM7kXSDZcthXFZ0esCsdv-X3CnzVfzGJDpmfoYkWc/export#gid=0&output=tsv')
-# assert response.status_code == 200, 'Wrong status code'
-# print(response.content)
-
-# assert(0)
 
 def build_sheet_url(doc_id, sheet_id):
     return f'https://docs.google.com/spreadsheets/d/{doc_id}/export?format=tsv&gid={sheet_id}'
@@ -57,8 +20,6 @@ sheet_url = build_sheet_url(doc_id, sheet_id)
 publications = pd.read_csv(sheet_url, sep="\t", header=0, keep_default_na=False)
 file_path = 'mfe_bib.tsv'
 write_df_to_local(publications, file_path)
-
-# publications = pd.read_csv("mfe_bib.tsv", sep="\t", header=0, keep_default_na=False)
 
 
 # ## Escape special characters
@@ -79,11 +40,7 @@ def html_escape(text):
     return "".join(html_escape_table.get(c,c) for c in text)
 
 
-# ## Creating the markdown files
-# 
-# This is where the heavy lifting is done. This loops through all the rows in the TSV dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page. If you don't want something to appear (like the "Recommended citation")
-
-# In[5]:
+bibtex_str = ''
 
 for row, item in publications.iterrows():
     
@@ -132,7 +89,9 @@ for row, item in publications.iterrows():
         "tro": "IEEE Transactions on Robotics and Automation (TRO)",
         "lcss": "IEEE Control Systems Letters (L-CSS)",
         "acc": "American Controls Conference (ACC)",
-        "cdc": "Conference on Decision and Control (CDC)",
+        "cdc": "IEEE Conference on Decision and Control (CDC)",
+        "neurips": "Conference on Neural Information Processing Systems (NeurIPS)",
+        "ojcs": "IEEE Open Journal of Control Systems (OJ-CSYS)",
     }
 
     if item.Venue in venue_dict:
@@ -174,3 +133,113 @@ for row, item in publications.iterrows():
        
     with open("../_publications/" + md_filename, 'w') as f:
         f.write(md)
+
+    '''
+    Generate bibtex entry in mfe.bib for that publication
+    '''
+    this_bibtex_str = ''
+
+    bibtex_pages_str = None
+    if item['Pages'] != "N/A":
+        bibtex_pages_str = item['Pages']
+    if item.Status != "published":
+        bibtex_pages_str = '(' + item.Status + ')'
+
+    bibtex_arxiv_link = None
+    if item['Arxiv link'] == 'N/A' and item['Official Link'] != '':
+        bibtex_arxiv_link = item['Official Link']
+    elif item['Arxiv link'] != '' and item['Arxiv link'] != 'N/A':
+        bibtex_arxiv_link = item['Arxiv link']
+
+    bibtex_month = None
+    if item['Month'] != '':
+        bibtex_month = item['Month']
+
+    bibtex_address = None
+    if item['Address'] != '':
+        bibtex_address = item['Address']
+
+    bibtex_year = None
+    if item['Year'] != '':
+        bibtex_year = str(item['Year'])
+
+    bibtex_volume = None
+    if item['Volume'] != '':
+        bibtex_volume = item['Volume']
+
+    bibtex_number = None
+    if item['Number'] != '':
+        bibtex_number = item['Number']
+
+    bibtex_doi = None
+    if item['DOI'] != '':
+        bibtex_doi = item['DOI']
+
+    bibtex_awards = None
+    if item['Awards'] != '' and item['Awards'] != 'N/A':
+        bibtex_awards = item['Awards']
+
+    bibtex_school = None
+    if item['School'] != '' and item['School'] != 'N/A':
+        bibtex_school = "Massachusetts Institute of Technology, Department of Mechanical Engineering"
+
+    if item.Type == "conference" or item.Type == "workshop":
+        this_bibtex_str += '\n@inproceedings{' + item.Abbreviation + ','
+        this_bibtex_str += '\n  entrysubtype = {' + item.Type + '},'
+        this_bibtex_str += '\n  Author = {' + item.Authors + '},'
+        this_bibtex_str += '\n  Booktitle = {' + venue_str + '},'
+        this_bibtex_str += '\n  Title = {' + item['Title'] + '},'
+        if bibtex_pages_str:
+            this_bibtex_str += '\n  Pages = {' + bibtex_pages_str + '},'
+        if bibtex_month:
+            this_bibtex_str += '\n  Month = {' + bibtex_month + '},'
+        if bibtex_address:
+            this_bibtex_str += '\n  Address = {' + bibtex_address + '},'
+        if bibtex_year:
+            this_bibtex_str += '\n  Year = {' + bibtex_year + '},'
+        if bibtex_arxiv_link:
+            this_bibtex_str += '\n  Url = {' + bibtex_arxiv_link + '},'
+        if bibtex_doi:
+            this_bibtex_str += '\n  Doi = {' + bibtex_doi + '},'
+        if bibtex_awards:
+            this_bibtex_str += '\n  awards = {' + bibtex_awards + '},'
+        this_bibtex_str += '\n}\n'
+    elif item.Type == "journal":
+        this_bibtex_str += '\n@article{' + item.Abbreviation + ','
+        this_bibtex_str += '\n  entrysubtype = {' + item.Type + '},'
+        this_bibtex_str += '\n  Author = {' + item.Authors + '},'
+        this_bibtex_str += '\n  Booktitle = {' + venue_str + '},'
+        this_bibtex_str += '\n  Title = {' + item['Title'] + '},'
+        if bibtex_pages_str:
+            this_bibtex_str += '\n  Pages = {' + bibtex_pages_str + '},'
+        if bibtex_year:
+            this_bibtex_str += '\n  Year = {' + bibtex_year + '},'
+        if bibtex_volume:
+            this_bibtex_str += '\n  Volume = {' + bibtex_volume + '},'
+        if bibtex_number:
+            this_bibtex_str += '\n  Number = {' + bibtex_number + '},'
+        if bibtex_arxiv_link:
+            this_bibtex_str += '\n  Url = {' + bibtex_arxiv_link + '},'
+        if bibtex_doi:
+            this_bibtex_str += '\n  Doi = {' + bibtex_doi + '},'
+        if bibtex_awards:
+            this_bibtex_str += '\n  awards = {' + bibtex_awards + '},'
+        this_bibtex_str += '\n}\n'
+    elif item.Type == "mastersthesis" or item.Type == "phdthesis":
+        this_bibtex_str += '\n@' + item.Type + '{' + item.Abbreviation + ','
+        this_bibtex_str += '\n  Author = {' + item.Authors + '},'
+        this_bibtex_str += '\n  School = {' + bibtex_school + '},'
+        this_bibtex_str += '\n  Title = {' + item['Title'] + '},'
+        if bibtex_month:
+            this_bibtex_str += '\n  Month = {' + bibtex_month + '},'
+        if bibtex_year:
+            this_bibtex_str += '\n  Year = {' + bibtex_year + '},'
+        if bibtex_arxiv_link:
+            this_bibtex_str += '\n  Url = {' + bibtex_arxiv_link + '},'
+        this_bibtex_str += '\n}\n'
+
+    bibtex_str += this_bibtex_str
+
+bibtex_str = bibtex_str[1:]
+with open("../mfe.bib", "w") as f:
+    f.write(bibtex_str)
