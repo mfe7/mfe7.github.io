@@ -91,7 +91,7 @@ for row, item in publications.iterrows():
         "ieeeaccess": "IEEE Access",
         "tnnls": "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
         "ral": "IEEE Robotics and Automation Letters (RA-L)",
-        "tro": "IEEE Transactions on Robotics and Automation (TRO)",
+        "tro": "IEEE Transactions on Robotics (TRO)",
         "lcss": "IEEE Control Systems Letters (L-CSS)",
         "acc": "American Controls Conference (ACC)",
         "cdc": "IEEE Conference on Decision and Control (CDC)",
@@ -213,7 +213,7 @@ for row, item in publications.iterrows():
         this_bibtex_str += '\n@article{' + item.Abbreviation + ','
         this_bibtex_str += '\n  entrysubtype = {' + item.Type + '},'
         this_bibtex_str += '\n  Author = {' + item.Authors + '},'
-        this_bibtex_str += '\n  Booktitle = {' + venue_str + '},'
+        this_bibtex_str += '\n  Journal = {' + venue_str + '},'
         this_bibtex_str += '\n  Title = {' + item['Title'] + '},'
         if bibtex_pages_str:
             this_bibtex_str += '\n  Pages = {' + bibtex_pages_str + '},'
