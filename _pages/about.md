@@ -17,7 +17,7 @@ homepage_feature_row:
 
 I'm currently a **Visiting Faculty Researcher with Google's [People + AI Research (PAIR)](https://research.google/teams/brain/pair/)** team.
 Then, I'll be joining **Northeastern University in January 2023** as an Assistant Professor, with a joint appointment in the Department of Electrical & Computer Engineering and the Khoury College of Computer Sciences.
-I direct the [**Northeastern Autonomy Laboratory**](https://neu-autonomy.github.io/lab_website).
+I direct the [**Autonomy & Intelligence Laboratory**](https://neu-autonomy.github.io/lab_website) at Northeastern.
 
 ---
 
