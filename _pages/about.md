@@ -20,7 +20,7 @@ I direct the [**Autonomy & Intelligence Laboratory**](https://neu-autonomy.githu
 
 ---
 
-<span style="color:blue">**Prospective Ph.D. Students:**</span> I plan to admit multiple fully funded Ph.D. students to my group at Northeastern University in the 2022-2023 cycle. Please reach out via email if you are interested in applying!
+<span style="color:blue">**Prospective Lab Members:**</span> Please take a look at [this page](https://neu-autonomy.github.io/lab_website/joinus) to see our current openings and express your interest using the relevant form. Unfortunately, I cannot respond to every email. Instead, by entering your info in the correct form, I can take a closer look when I am looking to hire for that position. I am planning to hire multiple Ph.D. students in the 2022-2023 cycle.
 
 ---
 
