@@ -3,7 +3,7 @@ title: "RAMP: A Risk-Aware Mapping and Planning Pipeline for Fast Off-Road Groun
 authors: "Lakshay Sharma, Michael Everett, Donggun Lee, Xiaoyi Cai, Philip Osteen, Jonathan P. How"
 venue: "IEEE International Conference on Robotics and Automation (ICRA)"
 year: "2023"
-status: "in review"
+status: "to appear"
 arxiv: "https://arxiv.org/abs/2210.06605"
 official_link: ""
 doi: ""
