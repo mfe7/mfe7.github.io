@@ -19,7 +19,12 @@
  <div>
     <h2 style="margin-top: 10px; margin-bottom: 0px;">{{ title }}</h2>
 
-    {% assign authors = post.authors | replace_first: 'Michael Everett', '<b>Michael Everett</b>' %}
+    <!-- Don't bold anyone's name -->
+    {% assign authors = post.authors %}
+
+    <!-- Bold a particular author's name -->
+    <!-- {% assign authors = post.authors | replace_first: 'Michael Everett', '<b>Michael Everett</b>' %} -->
+
     {% assign authors = authors | replace: '"{o}', 'ö' %}
     {% assign authors = authors | replace: '"{u}', 'ü' %}
     <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">{{ authors }}</h3>

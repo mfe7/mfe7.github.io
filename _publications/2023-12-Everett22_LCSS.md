@@ -2,11 +2,11 @@
 title: "DRIP: Domain Refinement Iteration with Polytopes for Backward Reachability Analysis of Neural Feedback Loops"
 authors: "Michael Everett, Rudy Bunel, Shayegan Omidshafiei"
 venue: "IEEE Control Systems Letters (L-CSS)"
-year: "2022"
+year: "2023"
 status: "to appear"
 arxiv: "https://arxiv.org/pdf/2212.04646.pdf"
 official_link: ""
-doi: ""
+doi: "10.1109/LCSYS.2023.3260731"
 volume: ""
 number: ""
 pages: ""
@@ -22,5 +22,5 @@ image: "backward_reachability_google.png"
 links_to_code: "https://github.com/mit-acl/nn_robustness_analysis"
 links_to_video: ""
 collection: publications
-permalink: /publication/2022-12-Everett22_LCSS.html
+permalink: /publication/2023-12-Everett22_LCSS.html
 ---
