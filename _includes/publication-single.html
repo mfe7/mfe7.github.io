@@ -32,17 +32,23 @@
       <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">{% if post.type contains "phd" %}PhD{% else %}SM{% endif %} Thesis, {{ post.year }}</h3>
       <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">MIT Department of Mechanical Engineering</h3>
     {% else %}
-      <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
-      {{ post.venue }}, {{ post.year }}
       {% if post.status == "in review" %}
-        (in review)
-      {% elsif post.status == "accepted" %}
-        (accepted)
-      {% elsif post.status == "to appear" %}
-        (to appear)
+        <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
+          {{ post.year }} (in review)
+        </h3>
+      {% else %}
+        <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
+          {{ post.venue }}, {{ post.year }}
+          {% if post.status == "accepted" %}
+            (accepted)
+          {% elsif post.status == "to appear" %}
+            (to appear)
+          {% else %}
+          {% endif %}
+        </h3>
       {% endif %}
-      </h3>
     {% endif %}
+    
 
     {% if post.notes != "" %}
       <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">

@@ -39,6 +39,7 @@ I received the PhD (2020), SM (2017), and SB (2015) degrees from MIT in Mechanic
 
 Selected Awards
 ------
+- Winner: Best Student Paper Award ([IEEE TC on Aerospace Control](https://ieeexplore.ieee.org/abstract/document/10317596), 2023)
 - Runner-Up: Best Paper Award ([1st Workshop on Formal Verification of Machine Learning, ICML 2022](https://www.ml-verification.com/home))
 - Editors' Top 5 Published Articles of 2021 (IEEE Access)
 - Winner: Best Paper Award on Cognitive Robotics (IROS 2019)

@@ -40,7 +40,8 @@
  <td>
  <div>
     <h4>{{ title }}</h4>
-    <h5 style="font-weight: normal">{{ post.authors | replace_first: 'Michael Everett', '<b>Michael Everett</b>' }}</h5>
+    <!-- <h5 style="font-weight: normal">{{ post.authors | replace_first: 'Michael Everett', '<b>Michael Everett</b>' }}</h5> -->
+    <h5 style="font-weight: normal">{{ post.authors }}</h5>
     <h5 style="font-weight: normal">
     {{ post.venue }} {{ post.year }}
     {% if post.status == "in review" %}
