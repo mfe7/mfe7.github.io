@@ -19,7 +19,7 @@ awards: "N/A"
 notes: "Also presented in ICLR Workshop on Gamification and Multiagent Solutions, 2022"
 include_on_website: true
 image: "kim_iclr_ws_2022.png"
-links_to_code: ""
+links_to_code: "https://github.com/dkkim93/further"
 links_to_video: ""
 collection: publications
 permalink: /publication/2022-04-Kim22_NeurIPS.html
