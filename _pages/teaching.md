@@ -8,6 +8,7 @@ author_profile: true
 Northeastern
 ------
 
+- EECE 7398 \& CS 7180: Special Topics: Verifiable Machine Learning, Fall 2024
 - EECE 5550: Mobile Robotics, Spring 2024
 - EECE 7398: Special Topics: Verifiable Machine Learning, Fall 2023
 - EECE 5550: Mobile Robotics, Spring 2023
