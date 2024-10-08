@@ -92,6 +92,7 @@ for row, item in publications.iterrows():
         "tnnls": "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
         "ral": "IEEE Robotics and Automation Letters (RA-L)",
         "tro": "IEEE Transactions on Robotics (TRO)",
+        "thri": "ACM Transactions on Human-Robot Interaction (T-HRI)",
         "lcss": "IEEE Control Systems Letters (L-CSS)",
         "acc": "American Controls Conference (ACC)",
         "cdc": "IEEE Conference on Decision and Control (CDC)",
