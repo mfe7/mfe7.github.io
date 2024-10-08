@@ -3,7 +3,7 @@ title: "Principles and Guidelines for Evaluating Social Robot Navigation Algorit
 authors: "Anthony Francis, Claudia Pérez-d'Arpino, Chengshu Li, Fei Xia, Alexandre Alahi, Rachid Alami, Aniket Bera, Abhijat Biswas, Joydeep Biswas, Rohan Chandra, Hao-Tien Lewis Chiang, Michael Everett, Sehoon Ha, Justin Hart, Jonathan P How, Haresh Karnan, Tsang-Wei Edward Lee, Luis J Manso, Reuth Mirksy, Soeren Pirk, Phani Teja Singamaneni, Peter Stone, Ada V Taylor, Peter Trautman, Nathan Tsoi, Marynel Vazquez, Xuesu Xiao, Peng Xu, Naoki Yokoyama, Alexander Toshev, Roberto Martin-Martin"
 venue: "thri"
 year: "2023"
-status: "in review"
+status: "accepted"
 arxiv: "https://arxiv.org/pdf/2306.16740.pdf"
 official_link: ""
 doi: ""
