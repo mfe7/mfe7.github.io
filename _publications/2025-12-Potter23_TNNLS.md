@@ -1,9 +1,9 @@
 ---
 title: "Robust Survival Analysis with Adversarial Regularization"
 authors: "Michael Potter, Stefano Maxenti, Michael Everett"
-venue: "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)"
-year: "2023"
-status: "in review"
+venue: "IEEE International Conference on Healthcare Informatics (ICHI)"
+year: "2025"
+status: "accepted"
 arxiv: "https://arxiv.org/pdf/2312.16019.pdf"
 official_link: ""
 doi: ""
@@ -13,7 +13,7 @@ pages: ""
 publisher: ""
 month: "12"
 address: ""
-type: "journal"
+type: "conference"
 school: ""
 awards: ""
 notes: ""
@@ -22,5 +22,5 @@ image: "potter23_journal.png"
 links_to_code: "https://github.com/mlpotter/SAWAR"
 links_to_video: ""
 collection: publications
-permalink: /publication/2023-12-Potter23_TNNLS.html
+permalink: /publication/2025-12-Potter23_TNNLS.html
 ---
