@@ -98,6 +98,7 @@ for row, item in publications.iterrows():
         "cdc": "IEEE Conference on Decision and Control (CDC)",
         "neurips": "Conference on Neural Information Processing Systems (NeurIPS)",
         "ojcs": "IEEE Open Journal of Control Systems (OJ-CSYS)",
+        "l4dc": "Learning for Decision and Control Conference (L4DC)",
     }
 
     if item.Venue in venue_dict:
