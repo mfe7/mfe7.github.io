@@ -20,7 +20,7 @@ notes: ""
 include_on_website: true
 image: "husky_fells.png"
 links_to_code: ""
-links_to_video: ""
+links_to_video: "https://youtu.be/vh5XxoWMjo8?si=jzTRpAK1KsszouW6"
 collection: publications
 permalink: /publication/2023-12-Sharma23_ICRA.html
 ---
