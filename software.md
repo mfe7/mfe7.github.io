@@ -29,6 +29,10 @@ software_feature_row3:
     title: "Trajectory Overlays"
 ---
 
+For the latest software from my research group, please visit our [GitHub page](https://github.com/neu-autonomy).
+
+For older software I developed with collaborators, please see below:
+
 {% include software_feature_row id="intro" type="center" %}
 
 {% include software_feature_row %}

@@ -1,6 +1,6 @@
 ---
 title: "Safe Reinforcement Learning with Model Uncertainty Estimates"
-authors: "Bj\"{o}rn L\"{u}tjens, Michael Everett, Jonathan P. How"
+authors: "Björn Lütjens, Michael Everett, Jonathan P. How"
 venue: "Machine Learning in Robot Motion Planning Workshop at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
 year: "2018"
 status: "published"

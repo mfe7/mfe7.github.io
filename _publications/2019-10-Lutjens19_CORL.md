@@ -1,6 +1,6 @@
 ---
 title: "Certified Adversarial Robustness for Deep Reinforcement Learning"
-authors: "Bj\"{o}rn L\"{u}tjens, Michael Everett, Jonathan P. How"
+authors: "Björn Lütjens, Michael Everett, Jonathan P. How"
 venue: "Conference on Robot Learning (CoRL)"
 year: "2019"
 status: "published"

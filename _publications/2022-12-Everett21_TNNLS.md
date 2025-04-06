@@ -1,6 +1,6 @@
 ---
 title: "Certifiable Robustness to Adversarial State Uncertainty in Deep Reinforcement Learning"
-authors: "Michael Everett*, Bj\"{o}rn L\"{u}tjens*, Jonathan P. How"
+authors: "Michael Everett*, Björn Lütjens*, Jonathan P. How"
 venue: "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)"
 year: "2022"
 status: "published"

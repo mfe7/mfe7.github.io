@@ -11,7 +11,7 @@ homepage_feature_row:
     title: "Neural Feedback Loop Verification"
   - image_path: publications/cadrl_stata.gif
     title: "Socially Aware Motion Planning"
-  - image_path: publications/jackal_offroad_small.png
+  - image_path: warthog.png
     title: "High-Speed Off-Road Navigation"
 ---
 
