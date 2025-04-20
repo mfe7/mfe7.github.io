@@ -33,6 +33,8 @@ For the latest software from my research group, please visit our [GitHub page](h
 
 For older software I developed with collaborators, please see below:
 
+GA3C-CADRL full test suite results (includes plot and stats for each of the 500 test cases for each number of agents, for the CADRL and two versions of GA3C-CADRL): [1.1GB zip file](/assets/ga3c_cadrl_results.zip)
+
 {% include software_feature_row id="intro" type="center" %}
 
 {% include software_feature_row %}
