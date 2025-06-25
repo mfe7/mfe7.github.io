@@ -4,7 +4,7 @@ authors: "Puja Chaudhury, Alexander Estornell, Michael Everett"
 venue: "IEEE Conference on Decision and Control (CDC)"
 year: "2025"
 status: "in review"
-arxiv: ""
+arxiv: "https://arxiv.org/abs/2504.16879"
 official_link: ""
 doi: ""
 volume: ""
@@ -19,7 +19,7 @@ awards: ""
 notes: ""
 include_on_website: true
 image: ""
-links_to_code: ""
+links_to_code: "https://github.com/catplotlib/Learning-Verifiable-Control-Policies-Using-Relaxed-Verification"
 links_to_video: ""
 collection: publications
 permalink: /publication/2025-12-Chaudhury25_learning.html

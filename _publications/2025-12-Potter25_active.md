@@ -1,9 +1,9 @@
 ---
 title: "Active Learning For Repairable Hardware Systems With Partial Coverage"
 authors: "Michael Potter, Beyza Kalkanlı, Deniz Erdoğmuş, Michael Everett"
-venue: ""
+venue: "Reliability, Availability, Maintainability and Safety (R.A.M.S.) - Europe"
 year: "2025"
-status: "in review"
+status: "accepted"
 arxiv: "https://arxiv.org/pdf/2503.16315"
 official_link: ""
 doi: ""

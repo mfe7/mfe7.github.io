@@ -3,7 +3,7 @@ title: "Chance-Constrained Convex MPC for Robust Quadruped Locomotion Under Para
 authors: "Ananya Trivedi, Sarvesh Prajapati, Mark Zolotas, Michael Everett, Taskin Padir"
 venue: "IEEE Robotics and Automation Letters (RA-L)"
 year: "2024"
-status: "in review"
+status: "accepted"
 arxiv: "https://arxiv.org/abs/2411.03481"
 official_link: ""
 doi: ""

@@ -4,7 +4,7 @@ authors: "Alexander Estornell*, Leonard Jung*, Alenna Spiro*, Mario Sznaier, Mic
 venue: "IEEE Conference on Decision and Control (CDC)"
 year: "2025"
 status: "in review"
-arxiv: ""
+arxiv: "https://arxiv.org/pdf/2504.18676"
 official_link: ""
 doi: ""
 volume: ""
@@ -19,7 +19,7 @@ awards: ""
 notes: ""
 include_on_website: true
 image: ""
-links_to_code: ""
+links_to_code: "https://github.com/neu-autonomy/HybridKoopman"
 links_to_video: ""
 collection: publications
 permalink: /publication/2025-12-Estornell25_hybrid.html
