@@ -18,7 +18,7 @@ school: ""
 awards: ""
 notes: ""
 include_on_website: true
-image: ""
+image: "potter25_tpp.png"
 links_to_code: ""
 links_to_video: ""
 collection: publications

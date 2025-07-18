@@ -72,7 +72,7 @@ for row, item in publications.iterrows():
     # Authors
     if "," in item.Authors:
         authors_str = ""
-        authors = item.Authors.split("and")
+        authors = item.Authors.split(" and ")
         for author in authors:
             last_name, first_name = author.split(",")
             authors_str += (

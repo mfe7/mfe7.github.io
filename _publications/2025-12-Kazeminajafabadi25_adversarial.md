@@ -3,7 +3,7 @@ title: "Adversarial Decoy Placement for Strategic State Perturbations in Artific
 authors: "Armita Kazeminajafabadi, Michael Everett, Tian Lan, Nathaniel D. Bastian, Mahdi Imani"
 venue: "IEEE Conference on Decision and Control (CDC)"
 year: "2025"
-status: "in review"
+status: "accepted"
 arxiv: ""
 official_link: ""
 doi: ""
